@@ -50,17 +50,7 @@ function generateFields() {
     for (i=0;i<fields.length;i++) {
         let newDiv = document.createElement('div')
         newDiv.classList.add('grid-item')
-        if (fields[i] == 'date') {
-            //get unique identifier
-            function getID() {
-                return fields[i-1].split(" ", 2).join("")
-            }
-            newDiv.textContent = `${fields[i-1].split(" ", 2).join("")}`
-            newDiv.classList.add(`${fields[i-1].split(" ", 2).join("")}`)
-            if dateKey.fields[]
-        } else {
-            newDiv.textContent = `${fields[i]}`
-        }
+        newDiv.textContent = `${fields[i]}`
         gridTest.appendChild(newDiv)
     }
 }
