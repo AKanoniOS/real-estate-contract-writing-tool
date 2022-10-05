@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Writing Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container-column">
+        <h1>Real Estate Contract Writing Tool</h1>
+        
+        <div class="container">
+            <div class="container-column offer-type">
+                <h2>Conventional</h2>
+                <div class="container">
+                    <label for="PSADate">PSA Date</label>
+                    <input type="date" name="PSADate" class="PSADate" oninput="calculateDates(this.value)">
+                </div>
+                <div class="container">
+                    <div class="date">nothing yet</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
